@@ -1,5 +1,12 @@
+import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap');
+* {
+
+  box-sizing: border-box;
+}
+
 body, html {
-    background-image: url(https://i.pinimg.com/originals/ef/e4/91/efe4911c1514bd6da486c87cab240f60.gif);
+    background-image: url(https://media.giphy.com/media/uLnPIWsqIz2aA/giphy.gif);
+    background-size: cover;
     margin: 0px;
     padding: 0px;
 }
@@ -14,7 +21,7 @@ body, html {
 
 .text {
     display: flex;
-    color: white;
+    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: center;
     align-items: center;
@@ -28,13 +35,15 @@ body, html {
     margin: 20 10px 20 10px;
     padding: 0 10px 0 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
 }
 
 .carousel p {
     justify-content: center;
     text-align: center;
-    color: white;
-    font-size: 22px;
+    color: yellow;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .carousel img {
@@ -42,4 +51,69 @@ body, html {
     width: 100%;
     object-fit: scale-down;
     filter: contrast(120%);
+
+}
+
+.columnContainer {
+    display: flex;
+    justify-content: center;
+    margin-left: 48px;
+    margin-right: 48px;
+}
+.thumbnailContainer {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.blink{
+		font-family: 'Roboto Mono', monospace;
+		font-weight:bold;
+		font-style:italic;
+		font-size:100px;
+		margin-left:auto;
+		text-align:center;
+		margin-top:5px;
+		margin-right:auto;
+    color:yellow;
+
+                animation: blink 2s ease infinite;
+}
+@keyframes blink{
+  0%{opacity:0;}
+  50%{opacity:1;}
+  100%{opacity:0;}
+}
+figure{
+   width:100%;
+   margin: 0;
+   padding: 350px 0 0 0;
+   position: absolute;
+   left: 0;
+   bottom 0px;
+   overflow hidden;
+   background-image :url('https://media.giphy.com/media/kuWN0iF9BLQKk/giphy.gif');
+   animation: pikaanim 75s linear infinite;
+}
+
+@keyframes pikaanim{
+  0%{background-position: 0 0;}
+  100%{background-position: 2122px 0;}
+}
+figure{
+   width:100%;
+   margin: 0;
+   padding: 350px 0 0 0;
+   position: absolute;
+   left: 0;
+   bottom 0px;
+   overflow hidden;
+   background-image :url('https://media.giphy.com/media/kuWN0iF9BLQKk/giphy.gif');
+   animation: pikaaanim 75s linear infinite;
+}
+
+@keyframes pikaaanim{
+  0%{background-position: 0 0;}
+  100%{background-position: 2122px 0;}
 }
